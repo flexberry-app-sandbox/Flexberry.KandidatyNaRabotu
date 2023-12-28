@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kandidaty-na-rabotu-вакант-должн-e",
+  "editForm": "i-i-s-kandidaty-na-rabotu-вакант-должн-e",
+  "external": false,
+  "caption": "Вакантная должность",
+  "name": "IISKandidaty_na_rabotuВакантДолжнL",
+  "className": "ВакантДолжнL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kandidaty-na-rabotu-вакант-должн",
+      "modelProjection": "ВакантДолжнL"
+    }
+  ]
+}

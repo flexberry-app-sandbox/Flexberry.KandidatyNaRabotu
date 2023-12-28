@@ -1,0 +1,94 @@
+<h3 class="ui header">{{t "forms.i-i-s-kandidaty-na-rabotu-планир-собес-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-kandidaty-na-rabotu-планир-собес-e.датаПланСобес-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.датаПланСобес
+      class=(if (v-get validationModel "датаПланСобес" "isInvalid") "error")
+      data-test-i-i-s-kandidaty-na-rabotu-планир-собес-e-датаПланСобес=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "датаПланСобес" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.иметьПриСебе
+      class=(if (v-get validationModel "иметьПриСебе" "isInvalid") "error")
+      label=(t "forms.i-i-s-kandidaty-na-rabotu-планир-собес-e.иметьПриСебе-caption")
+      data-test-i-i-s-kandidaty-na-rabotu-планир-собес-e-иметьПриСебе=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "иметьПриСебе" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.время
+      class=(if (v-get validationModel "время" "isInvalid") "error")
+      label=(t "forms.i-i-s-kandidaty-na-rabotu-планир-собес-e.время-caption")
+      data-test-i-i-s-kandidaty-na-rabotu-планир-собес-e-время=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "время" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-kandidaty-na-rabotu-планир-собес-e.организация-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.организация
+      displayAttributeName="наименование"
+      autocomplete=true
+      relationName="организация"
+      projection="ОрганизацияL"
+      title=(t "forms.i-i-s-kandidaty-na-rabotu-планир-собес-e.организация-caption")
+      readonly=readonly
+      componentName="организацияLookup"
+      class=(if (v-get validationModel "организация" "isInvalid") "error")
+      data-test-i-i-s-kandidaty-na-rabotu-планир-собес-e-организация=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "организация" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-kandidaty-na-rabotu-планир-собес-e.регистАнкеты-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.регистАнкеты
+      displayAttributeName="фИОКандид"
+      autocomplete=true
+      relationName="регистАнкеты"
+      projection="РегистАнкетыL"
+      title=(t "forms.i-i-s-kandidaty-na-rabotu-планир-собес-e.регистАнкеты-caption")
+      readonly=readonly
+      componentName="регистАнкетыLookup"
+      class=(if (v-get validationModel "регистАнкеты" "isInvalid") "error")
+      data-test-i-i-s-kandidaty-na-rabotu-планир-собес-e-регистАнкеты=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "регистАнкеты" "message")}}
+  </div>
+</form>

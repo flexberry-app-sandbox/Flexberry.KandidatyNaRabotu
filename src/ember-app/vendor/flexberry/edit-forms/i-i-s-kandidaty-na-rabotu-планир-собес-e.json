@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Организация",
+      "projection": "ОрганизацияL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "РегистАнкеты",
+      "projection": "РегистАнкетыL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Планирование собеседования",
+  "name": "IISKandidaty_na_rabotuПланирСобесE",
+  "className": "ПланирСобесE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kandidaty-na-rabotu-планир-собес",
+      "modelProjection": "ПланирСобесE"
+    }
+  ]
+}

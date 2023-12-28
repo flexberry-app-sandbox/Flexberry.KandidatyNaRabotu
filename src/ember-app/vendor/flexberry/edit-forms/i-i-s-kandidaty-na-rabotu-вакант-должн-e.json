@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Вакантная должность",
+  "name": "IISKandidaty_na_rabotuВакантДолжнE",
+  "className": "ВакантДолжнE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kandidaty-na-rabotu-вакант-должн",
+      "modelProjection": "ВакантДолжнE"
+    }
+  ]
+}

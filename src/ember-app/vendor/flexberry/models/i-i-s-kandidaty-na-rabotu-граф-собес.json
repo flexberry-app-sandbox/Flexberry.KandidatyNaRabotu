@@ -1,0 +1,44 @@
+﻿{
+  "name": "IISKandidaty_na_rabotuГрафСобес",
+  "modelName": "i-i-s-kandidaty-na-rabotu-граф-собес",
+  "className": "ГрафСобес",
+  "nameSpace": "IIS.Kandidaty_na_rabotu",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [],
+  "hasMany": [
+    {
+      "name": "тЧГрафСобес",
+      "relatedTo": "i-i-s-kandidaty-na-rabotu-т-ч-граф-собес",
+      "inverse": "графСобес"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ГрафСобесE",
+      "modelName": "i-i-s-kandidaty-na-rabotu-граф-собес",
+      "attrs": [],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "ТЧГрафСобесE",
+          "caption": "Т ч граф собес",
+          "name": "тЧГрафСобес",
+          "relatedTo": "i-i-s-kandidaty-na-rabotu-т-ч-граф-собес",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ГрафСобесL",
+      "modelName": "i-i-s-kandidaty-na-rabotu-граф-собес",
+      "attrs": [],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

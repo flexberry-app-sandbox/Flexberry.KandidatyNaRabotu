@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistencehttp://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="Olingo4PG">
+        <class>Kandidaty_na_rabotu.model.RegRezult</class>
+        <class>Kandidaty_na_rabotu.model.VakantDolzhn</class>
+        <class>Kandidaty_na_rabotu.model.Sotrudniki</class>
+        <class>Kandidaty_na_rabotu.model.TCHRegRezult</class>
+        <class>Kandidaty_na_rabotu.model.Sotrud</class>
+        <class>Kandidaty_na_rabotu.model.TCHGrafSobes</class>
+        <class>Kandidaty_na_rabotu.model.PlanirSobes</class>
+        <class>Kandidaty_na_rabotu.model.GrafSobes</class>
+        <class>Kandidaty_na_rabotu.model.RegistAnkety</class>
+        <class>Kandidaty_na_rabotu.model.Organizaciya</class>
+        <class>Kandidaty_na_rabotu.model.FlexberryAdvLimit</class>
+        <class>Kandidaty_na_rabotu.model.NewPlatformFlexberryFlexberryUserSetting</class>
+        <class>Kandidaty_na_rabotu.model.NewPlatformFlexberryServicesLock</class>
+        <class>Kandidaty_na_rabotu.model.IISCaseberryLoggingObjectsApplicationLog</class>
+
+    </persistence-unit>
+</persistence>

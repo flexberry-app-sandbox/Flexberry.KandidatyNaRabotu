@@ -1,0 +1,75 @@
+﻿{
+  "name": "IISKandidaty_na_rabotuВакантДолжн",
+  "modelName": "i-i-s-kandidaty-na-rabotu-вакант-должн",
+  "className": "ВакантДолжн",
+  "nameSpace": "IIS.Kandidaty_na_rabotu",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "iDДолжности",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "должность",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ВакантДолжнE",
+      "modelName": "i-i-s-kandidaty-na-rabotu-вакант-должн",
+      "attrs": [
+        {
+          "name": "iDДолжности",
+          "caption": "I d должности",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "должность",
+          "caption": "Должность",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ВакантДолжнL",
+      "modelName": "i-i-s-kandidaty-na-rabotu-вакант-должн",
+      "attrs": [
+        {
+          "name": "iDДолжности",
+          "caption": "I d должности",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "должность",
+          "caption": "Должность",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

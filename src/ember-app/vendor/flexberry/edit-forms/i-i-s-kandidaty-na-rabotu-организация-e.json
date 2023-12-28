@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Организация",
+  "name": "IISKandidaty_na_rabotuОрганизацияE",
+  "className": "ОрганизацияE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kandidaty-na-rabotu-организация",
+      "modelProjection": "ОрганизацияE"
+    }
+  ]
+}

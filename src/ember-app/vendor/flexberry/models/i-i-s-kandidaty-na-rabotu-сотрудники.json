@@ -1,0 +1,96 @@
+﻿{
+  "name": "IISKandidaty_na_rabotuСотрудники",
+  "modelName": "i-i-s-kandidaty-na-rabotu-сотрудники",
+  "className": "Сотрудники",
+  "nameSpace": "IIS.Kandidaty_na_rabotu",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "iDСотруд",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "должность",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "фИОСотр",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "СотрудникиE",
+      "modelName": "i-i-s-kandidaty-na-rabotu-сотрудники",
+      "attrs": [
+        {
+          "name": "iDСотруд",
+          "caption": "I d сотруд",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "фИОСотр",
+          "caption": "Ф и о сотр",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "должность",
+          "caption": "Должность",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "СотрудникиL",
+      "modelName": "i-i-s-kandidaty-na-rabotu-сотрудники",
+      "attrs": [
+        {
+          "name": "iDСотруд",
+          "caption": "I d сотруд",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "фИОСотр",
+          "caption": "Ф и о сотр",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "должность",
+          "caption": "Должность",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

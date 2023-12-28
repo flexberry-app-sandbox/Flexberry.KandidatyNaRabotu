@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kandidaty-na-rabotu-сотрудники-e",
+  "editForm": "i-i-s-kandidaty-na-rabotu-сотрудники-e",
+  "external": false,
+  "caption": "Сотрудники",
+  "name": "IISKandidaty_na_rabotuСотрудникиL",
+  "className": "СотрудникиL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kandidaty-na-rabotu-сотрудники",
+      "modelProjection": "СотрудникиL"
+    }
+  ]
+}

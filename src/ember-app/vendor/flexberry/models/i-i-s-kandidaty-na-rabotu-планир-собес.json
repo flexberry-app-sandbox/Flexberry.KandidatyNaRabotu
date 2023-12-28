@@ -1,0 +1,197 @@
+﻿{
+  "name": "IISKandidaty_na_rabotuПланирСобес",
+  "modelName": "i-i-s-kandidaty-na-rabotu-планир-собес",
+  "className": "ПланирСобес",
+  "nameSpace": "IIS.Kandidaty_na_rabotu",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "время",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "датаПланСобес",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "иметьПриСебе",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "организация",
+      "relatedTo": "i-i-s-kandidaty-na-rabotu-организация",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "регистАнкеты",
+      "relatedTo": "i-i-s-kandidaty-na-rabotu-регист-анкеты",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ПланирСобесE",
+      "modelName": "i-i-s-kandidaty-na-rabotu-планир-собес",
+      "attrs": [
+        {
+          "name": "датаПланСобес",
+          "caption": "Дата план собес",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "иметьПриСебе",
+          "caption": "Иметь при себе",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "время",
+          "caption": "Время",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Наименование",
+          "lookupValueField": "наименование",
+          "relationName": "Организация",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": true,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "standard",
+          "caption": "Организация",
+          "name": "организация",
+          "relatedTo": "i-i-s-kandidaty-na-rabotu-организация",
+          "inverse": null
+        },
+        {
+          "lookupValue": "ФИОКандид",
+          "lookupValueField": "фИОКандид",
+          "relationName": "РегистАнкеты",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИОКандид",
+              "caption": "Ф и о кандид",
+              "hidden": true,
+              "index": 6
+            }
+          ],
+          "index": 5,
+          "type": "standard",
+          "caption": "Регист анкеты",
+          "name": "регистАнкеты",
+          "relatedTo": "i-i-s-kandidaty-na-rabotu-регист-анкеты",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ПланирСобесL",
+      "modelName": "i-i-s-kandidaty-na-rabotu-планир-собес",
+      "attrs": [
+        {
+          "name": "датаПланСобес",
+          "caption": "Дата план собес",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "иметьПриСебе",
+          "caption": "Иметь при себе",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "время",
+          "caption": "Время",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Организация",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Наименование",
+          "name": "организация",
+          "relatedTo": "i-i-s-kandidaty-na-rabotu-организация",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "РегистАнкеты",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИОКандид",
+              "caption": "Ф и о кандид",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Ф и о кандид",
+          "name": "регистАнкеты",
+          "relatedTo": "i-i-s-kandidaty-na-rabotu-регист-анкеты",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

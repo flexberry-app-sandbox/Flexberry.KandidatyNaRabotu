@@ -1,0 +1,80 @@
+﻿{
+  "applicationCaption": "Kandidaty_na_rabotu",
+  "applicationTitle": "Kandidaty_na_rabotu",
+  "items": [
+    {
+      "link": null,
+      "menuName": "информация-об-организации",
+      "caption": "Информация об организации",
+      "title": "Информация об организации",
+      "children": [
+        {
+          "link": "i-i-s-kandidaty-na-rabotu-организация-l",
+          "menuName": null,
+          "caption": "Организация",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kandidaty-na-rabotu-вакант-должн-l",
+          "menuName": null,
+          "caption": "Вакантная должность",
+          "title": "",
+          "children": null
+        }
+      ]
+    },
+    {
+      "link": null,
+      "menuName": "документы",
+      "caption": "Документы",
+      "title": "Документы",
+      "children": [
+        {
+          "link": "i-i-s-kandidaty-na-rabotu-граф-собес-l",
+          "menuName": null,
+          "caption": "График собеседований",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kandidaty-na-rabotu-рег-результ-l",
+          "menuName": null,
+          "caption": "Регистрация результатов",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kandidaty-na-rabotu-планир-собес-l",
+          "menuName": null,
+          "caption": "Планирование собеседования",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kandidaty-na-rabotu-регист-анкеты-l",
+          "menuName": null,
+          "caption": "Регистрация анкеты",
+          "title": "",
+          "children": null
+        }
+      ]
+    },
+    {
+      "link": null,
+      "menuName": "информация-о-сотрудниках",
+      "caption": "Информация о сотрудниках",
+      "title": "Информация о сотрудниках",
+      "children": [
+        {
+          "link": "i-i-s-kandidaty-na-rabotu-сотрудники-l",
+          "menuName": null,
+          "caption": "Сотрудники",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

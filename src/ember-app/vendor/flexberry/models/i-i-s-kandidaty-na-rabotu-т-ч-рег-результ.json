@@ -1,0 +1,107 @@
+﻿{
+  "name": "IISKandidaty_na_rabotuТЧРегРезульт",
+  "modelName": "i-i-s-kandidaty-na-rabotu-т-ч-рег-результ",
+  "className": "ТЧРегРезульт",
+  "nameSpace": "IIS.Kandidaty_na_rabotu",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "итогСобесед",
+      "type": "i-i-s-kandidaty-na-rabotu-итог-собесед",
+      "flexberryType": "ИтогСобесед",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "крКомИлиОбсРеш",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "оценкаКандид",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сотрудники",
+      "relatedTo": "i-i-s-kandidaty-na-rabotu-сотрудники",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "регРезульт",
+      "relatedTo": "i-i-s-kandidaty-na-rabotu-рег-результ",
+      "inverse": "тЧРегРезульт"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТЧРегРезультE",
+      "modelName": "i-i-s-kandidaty-na-rabotu-т-ч-рег-результ",
+      "attrs": [
+        {
+          "name": "итогСобесед",
+          "caption": "Итог собесед",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "оценкаКандид",
+          "caption": "Оценка кандид",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "крКомИлиОбсРеш",
+          "caption": "Кр ком или обс реш",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "ФИОСотр",
+          "lookupValueField": "фИОСотр",
+          "relationName": "Сотрудники",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИОСотр",
+              "caption": "Ф и о сотр",
+              "hidden": true,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "standard",
+          "caption": "Сотрудники",
+          "name": "сотрудники",
+          "relatedTo": "i-i-s-kandidaty-na-rabotu-сотрудники",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

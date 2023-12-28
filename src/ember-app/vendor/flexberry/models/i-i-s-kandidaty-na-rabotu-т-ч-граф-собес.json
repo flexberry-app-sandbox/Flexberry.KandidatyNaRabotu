@@ -1,0 +1,60 @@
+﻿{
+  "name": "IISKandidaty_na_rabotuТЧГрафСобес",
+  "modelName": "i-i-s-kandidaty-na-rabotu-т-ч-граф-собес",
+  "className": "ТЧГрафСобес",
+  "nameSpace": "IIS.Kandidaty_na_rabotu",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "планирСобес",
+      "relatedTo": "i-i-s-kandidaty-na-rabotu-планир-собес",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "графСобес",
+      "relatedTo": "i-i-s-kandidaty-na-rabotu-граф-собес",
+      "inverse": "тЧГрафСобес"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТЧГрафСобесE",
+      "modelName": "i-i-s-kandidaty-na-rabotu-т-ч-граф-собес",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": "ИметьПриСебе",
+          "lookupValueField": "иметьПриСебе",
+          "relationName": "ПланирСобес",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "иметьПриСебе",
+              "caption": "Иметь при себе",
+              "hidden": true,
+              "index": 1
+            }
+          ],
+          "index": 0,
+          "type": "standard",
+          "caption": "Планир собес",
+          "name": "планирСобес",
+          "relatedTo": "i-i-s-kandidaty-na-rabotu-планир-собес",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
